@@ -1,0 +1,34 @@
+eval $(docker-machine env Char)
+#
+#
+# - $() = Substitution de commande : réassigne la sortie d'une commande ou même de
+# multiples commandes ; elle branche littéralement la sortie d'une commande sur un
+# autre contexte. La sortie des commandes peut être utilisée comme argument d'une
+# autre commande, pour affecter une variable, voire pour génerer la liste des arguments
+# dans une boucle for.
+#
+# - docker-machine env = Renvoie les variables d'environnement pour acceder a la machine.
+#
+# - eval = Execute les commandes renvoyé par docker-machine.
+# La commande eval permet de faire subir à une ligne de commande une double évaluation.
+# Elle prend en argument une suite d’expressions.
+# Sans un eval explicite, le shell tente d'exécuter le résultat d'une substitution
+# de commande et non de l'évaluer.
+# Dites vous que vous voulez coder un équivalent de :
+# VAR=value; echo $VAR
+# Notez la différence dans la façon dont le shell gère les écritures de echo VAR=value : 
+# 
+# ~ $( echo VAR=value )
+# bash: VAR=value: command not found
+# ~ echo $VAR
+# <empty line>
+#
+# Le shell tente d'exécuter echo et VAR=value en tant que deux commandes distinctes.
+# Il jette une erreur sur la deuxième chaîne. La mission reste inefficace.
+#
+# ~ eval $( echo VAR=value )
+# ~ echo $VAR
+# value
+#
+# liens utiles :
+# https://devopssec.fr/article/deployer-gerer-vos-hotes-docker-avec-docker-machine

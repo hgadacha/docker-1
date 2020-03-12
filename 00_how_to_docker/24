@@ -1,0 +1,17 @@
+docker service create --name=orbital-command -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password --network overmind rabbitmq
+#
+#
+# docker service create : Creation d'un service.
+#
+# (--name) : Assigner un nom.
+#
+# (-e)(--env) : Definition de variables d'environnement.
+#
+# RABBITMQ_DEFAULT_USER / RABBITMQ_DEFAULT_PASS : Variables d'environnement spécifiques à
+# l’utilisation du service RabbitMQ. (voir le docker hub)
+#
+# (--network) : Lier le service a un reseau.
+#
+# liens utiles :
+# https://hub.docker.com/_/rabbitmq
+# https://docs.docker.com/engine/reference/commandline/service_create/

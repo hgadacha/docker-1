@@ -1,0 +1,7 @@
+docker-machine ip Char
+#
+#
+# Recuperation de l'adresses IP de la machine "Char".
+#
+# liens utiles :
+# https://docs.docker.com/v17.12/machine/get-started/#run-containers-and-experiment-with-machine-commands

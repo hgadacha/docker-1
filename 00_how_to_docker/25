@@ -1,0 +1,7 @@
+docker service ls
+#
+#
+# Autres commandes possibles : docker service list
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/service_ls/

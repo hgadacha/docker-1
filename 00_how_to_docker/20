@@ -1,0 +1,19 @@
+docker swarm init --advertise-addr $(docker-machine ip Char)
+#
+#
+# --advertise-addr : Cela indique quelle adresse IP doit être utilisée pour l'accès API et
+# la mise en réseau de superposition.
+#
+#
+# Swarm : Un Swarm Docker est un groupe de machines physiques ou virtuelles qui exécutent
+# l'application Docker et qui ont été configurées pour se réunir dans un cluster.
+# Docker swarm est un outil d'orchestration de conteneurs, ce qui signifie qu'il permet à
+# l'utilisateur de gérer plusieurs conteneurs déployés sur plusieurs machines hôtes.
+#
+#
+# liens utiles :
+# https://www.sumologic.com/glossary/docker-swarm/
+# https://docs.docker.com/engine/swarm/swarm-mode/
+# https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
+# https://www.techrepublic.com/article/how-to-create-a-docker-swarm/
+# https://docs.docker.com/engine/reference/commandline/swarm_init/

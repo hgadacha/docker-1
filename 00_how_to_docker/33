@@ -1,0 +1,15 @@
+docker image rm -f $(docker image ls -q -a)
+#
+#
+# docker image rm : Supprime une ou plusieurs images.
+# (-f)(--force) : Force la suppression d'un conteneur en cours d'exécution.
+#
+# $() : Réassigne la sortie d'une commande.
+#
+# docker image ls : Liste des images.
+# (-q)(--quiet) : Affiche uniquement les ID.
+# (-a)(--all) : Affiche tous les conteneurs.
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/image_ls/
+# https://docs.docker.com/engine/reference/commandline/image_rm/

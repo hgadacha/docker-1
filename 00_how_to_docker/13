@@ -1,0 +1,8 @@
+docker container exec spawning-pool env
+#
+#
+# exec : Exécute une commande dans un conteneur en cours d'exécution.
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/container_exec/
+# https://stackoverflow.com/questions/34051747/get-environment-variable-from-docker-container/34052766

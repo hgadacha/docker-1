@@ -1,0 +1,19 @@
+docker volume create --name=hatchery
+#
+#
+# Par défaut, tous les fichiers créés à l'intérieur d'un conteneur sont stockés sur
+# une couche de conteneur accessible en écriture. Cela signifie que les données
+# ne persistent pas lorsque ce conteneur n'existe plus, et il peut être difficile
+# d'extraire les données du conteneur si un autre processus en a besoin. Les
+# volumes sont stockés dans une partie du système de fichiers hôte géré par
+# Docker (/var/lib/docker/volumes/sous Linux). Les processus non Docker
+# ne doivent pas modifier cette partie du système de fichiers. Les volumes sont le
+# meilleur moyen de conserver les données dans Docker.
+#
+# liens utiles :
+# https://docs.docker.com/storage/volumes/
+# https://docs.docker.com/engine/reference/commandline/volume_create/
+# https://docs.docker.com/storage/bind-mounts/
+# https://blog.container-solutions.com/understanding-volumes-docker
+# https://docs.docker.com/storage/
+# https://www.youtube.com/watch?v=KjaiVP2p0C8

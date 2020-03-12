@@ -1,0 +1,19 @@
+docker container run --detach --name=overlord --publish 5000:80 --restart always nginx
+#
+#
+# (-d)(--detach) : Execute le container en arriere plan.
+#
+# --name= ... : Attribue un nom au conteneur.
+# 
+# (-p)(--publish) : Publie (lie) les ports d'un conteneur sur l'hôte.
+# 
+# (--restart) : Politique de redémarrage à appliquer à la sortie d'un
+# conteneur (par défaut "non").
+# always : Redémarrez toujours le conteneur quel que soit l'état de sortie.
+# Lorsque vous spécifiez toujours, le démon Docker essaiera de redémarrer le
+# conteneur indéfiniment. Le conteneur démarre également toujours au démarrage
+# du démon, quel que soit l'état actuel du conteneur.
+# (plus d'info --> docker container run --help)
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/container_run/

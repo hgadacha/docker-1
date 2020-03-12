@@ -1,0 +1,6 @@
+docker pull hello-world
+#
+#
+# liens utiles :
+# https://hub.docker.com/_/hello-world?tab=description
+# https://forums.docker.com/t/docker-pull-imagename-vs-docker-image-pull-imagename/59283

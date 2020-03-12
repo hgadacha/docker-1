@@ -1,0 +1,25 @@
+docker container run -d --name=lair -p 8080:80 --link spawning-pool:lair wordpress
+#
+#
+# (-d)(--detach) : Execute le container en arriere plan.
+# 
+# (--name): Attribue un nom au conteneur.
+# 
+# (-p)(--publish) : Publie (lie) les ports d'un conteneur sur l'hôte.
+# 
+# --link : Ajoute un lien vers un autre conteneur. Attend 2 arguments separes par (:),
+# le premier argument doit etre un ID ou le nom d'un conteneur avec qui le lien veut etre
+# etablie, le second argument correspond au nom du service.
+# 
+# WordPress est un outil de blogage gratuit et open source et un système de gestion de contenu
+# basé sur PHP et MySQL, qui fonctionne sur un service d'hébergement Web. Les fonctionnalités
+# incluent une architecture de plugin et un système de modèles. WordPress est le système de
+# blogage le plus populaire utilisé sur le Web.
+#
+# liens utiles :
+# https://hub.docker.com/_/wordpress/
+# https://docs.docker.com/engine/reference/commandline/container_run/
+# https://stackoverflow.com/questions/41768157/how-to-link-container-in-docker/41768466
+# https://linuxconfig.org/basic-example-on-how-to-link-docker-containers
+# https://docs.docker.com/network/links/
+# https://docs.docker.com/compose/compose-file/

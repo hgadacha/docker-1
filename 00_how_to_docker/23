@@ -1,0 +1,13 @@
+docker network create -d overlay overmind
+#
+#
+# (-d),(--driver) : Pilote pour gérer le réseau.
+#
+# Le pilote de réseau de overlay crée un réseau distribué entre plusieurs hôtes de démon Docker,
+# permettant aux containers qui y sont connectes (y compris les conteneurs de service Swarm) de
+# communiquer en toute sécurité lorsque le chiffrement est activé.
+#
+#
+# lien utiles :
+# https://docs.docker.com/engine/reference/commandline/network_create/
+# https://docs.docker.com/network/overlay/

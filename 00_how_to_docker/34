@@ -1,0 +1,8 @@
+docker-machine rm -f -y Aiur
+#
+#
+# docker-machine rm : Supprime la machine virtuelle.
+# (-f)(--force) : Force la suppression d'un conteneur en cours d'exécution.
+# (-y) : Yes aux demandes de confirmation.
+#
+# docker-machine rm --help

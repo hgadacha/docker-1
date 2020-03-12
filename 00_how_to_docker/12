@@ -1,0 +1,36 @@
+docker container run -d --restart on-failure -e MYSQL_ROOT_PASSWORD=Kerrigan -v hatchery:/var/lib/mysql -e MYSQL_DATABASE=zerglings --name=spawning-pool mysql
+#
+#
+# (-d)(--detach) : Execute le container en arriere plan.
+#
+# (--restart) : Politique de redémarrage à appliquer à la sortie d'un
+# conteneur (par défaut "non").
+# on-failure : Redémarrez uniquement si le conteneur se termine avec un état de
+# sortie différent de zéro.
+# 
+# (-e)(--env) : Définir les variables d'environnement dans le conteneur exécuté,
+# ou remplace les variables définies dans le Dockerfile de l'image exécutée.
+# 
+# MYSQL_ROOT_PASSWORD : Variables d'environnement spécifiques à l’utilisation du container MySQL.
+# Cette variable est obligatoire et spécifie le mot de passe qui sera défini pour le compte root
+# racine MySQL.
+# 
+# (-v)(--volume) : lie, monte dans un volume :
+# 		(-v | --volume) Se compose de trois champs, séparés par des deux points (:). Les
+# 		champs doivent être dans le bon ordre :
+# 		1) Dans le cas des montages de liaison, le premier champ est le chemin d'accès au
+# 		fichier ou au répertoire sur la machine hôte .
+# 		2) Le deuxième champ est le chemin où le fichier ou le répertoire sont montés dans
+# 		le conteneur.
+# 		3) Facultatif.
+# 
+# /var/lib/mysql : où MySQL par défaut écrira ses fichiers de données.
+# 
+# MYSQL_DATABASE : variable prédéfinie dans l'image MySQL. Cette variable est
+# facultative et vous permet de spécifier le nom d'une base de données à créer
+# au démarrage de l'image.
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/run/
+# https://docs.docker.com/storage/volumes/
+# https://hub.docker.com/_/mysql

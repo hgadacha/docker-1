@@ -1,0 +1,22 @@
+docker service logs -f $(docker service ps -q engineering-bay | tail -n 1)
+#
+#
+# La commande docker service logs peut être utilisée avec le nom ou l'ID d'un service,
+# ou avec l'ID d'une tâche. Si un service est passe en parametres, il affichera les journaux
+# de tous les conteneurs de ce service. Si une tâche est passee, elle n'affichera que les
+# journaux de cette tâche particulière.
+#
+# (-f)(--follow) : Avec l'option --follow la commande continuera de diffuser en continu la sortie des
+# logs à partir de la sortie standard (STDOUT) et de l'erreur standard (STDERR) du service.
+#
+# $() : Substitution de commande : réassigne la sortie d'une commande.
+#
+# docker service ps : Lister les tâches d'un ou plusieurs services.
+#
+# (-q)(--quiet) : Afficher uniquement les ID de tâche.
+#
+# tail -n 1 : Affiche N lignes.
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/service_ps/
+# https://docs.docker.com/engine/reference/commandline/service_logs/

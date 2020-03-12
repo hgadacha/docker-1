@@ -1,0 +1,8 @@
+docker-machine create --driver virtualbox Char
+#
+#
+# Creation d'une machine virtuelle nommée "Char" utilisant le driver virtualbox.
+# D'autres drivers sont disponibles : https://docs.docker.com/machine/drivers/
+#
+# liens utiles :
+# https://docs.docker.com/machine/reference/create/

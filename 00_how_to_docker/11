@@ -1,0 +1,7 @@
+docker volume ls -q
+#
+#
+# -q (--quiet) : Affiche uniquement les noms de volume.
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/volume_ls/

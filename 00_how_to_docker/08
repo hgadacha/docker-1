@@ -1,0 +1,25 @@
+docker container run -i -t --rm alpine /bin/sh
+#
+#
+# docker container run : Exécutez une commande dans un nouveau conteneur.
+# 
+# (-i)(--interactive) : Garde l'entree standard ouverte.
+# (-t)(--tty) : Permet de se connecter au conteneur en utilisant TTY (pseudo terminal :
+# qui a les fonctions d'un terminal physique sans en être un).
+# La combinaison -i -t (-it) permet d'ajouter un pilote de terminal qui permet
+# d'interagir avec le processus.
+# 
+# -rm : Retire automatiquement le conteneur à sa sortie.
+# alpine : Alpine Linux est une distribution Linux construite autour de musl libc et
+# BusyBox. L'image ne fait que 5 Mo et a accès à un référentiel de packages beaucoup
+# plus complet que les autres images basées sur BusyBox.
+# /bin/sh : shell utilise pour la communication.
+# (exit pour sortir)
+#
+# liens utiles :
+# https://training.play-with-docker.com/ops-s1-hello/
+# http://containertutorials.com/alpine/get_started.html
+# https://unix.stackexchange.com/questions/21147/what-are-pseudo-terminals-pty-tty
+# https://stackoverflow.com/questions/30137135/confused-about-docker-t-option-to-allocate-a-pseudo-tty
+# https://stackoverflow.com/questions/22272401/what-does-it-mean-to-attach-a-tty-std-in-out-to-dockers-or-lxc
+# https://docs.docker.com/engine/reference/commandline/container_run/

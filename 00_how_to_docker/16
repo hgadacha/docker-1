@@ -1,0 +1,6 @@
+docker container logs -f spawning-pool
+#
+# -f (--follow) : Consultation et suivi des logs.
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/container_logs/

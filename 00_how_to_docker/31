@@ -1,0 +1,13 @@
+docker service rm $(docker service ls -q)
+#
+# docker service rm : Supprime le service en cours d'exécution sur le swarm.
+#
+# $() : Substitution de commande : réassigne la sortie d'une commande.
+#
+# docker service ls : liste les services.
+# (-q)(--quiet) : Afficher uniquement les ID.
+#
+#
+# liens utiles :
+# https://docs.docker.com/engine/swarm/swarm-tutorial/delete-service/
+# https://docs.docker.com/engine/reference/commandline/service_ls/

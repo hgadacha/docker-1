@@ -1,0 +1,7 @@
+docker service ps marines
+#
+#
+# docker service ps : Liste les tâches d'un ou plusieurs services.
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/service_ps/

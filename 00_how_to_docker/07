@@ -1,0 +1,23 @@
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' overlord
+#
+#
+# docker inspect : Cette commande affiche les informations de bas niveau sur
+# les objets Docker (par exemple : conteneur, image, volume, réseau, nœud,
+# service ou tâche) identifiés par nom ou ID.
+#
+# -f (--format) : Formate la sortie en utilisant le modèle Go donné (pour
+# obtenir uniquement l'adresse IP au lieu des informations complètes sur le conteneur).
+# 
+# La commande fonctionne egalement avec "container" apres "docker".
+# docker container : affiche des informations détaillées sur un ou plusieurs conteneurs.
+#
+# Par défaut, le conteneur se voit attribuer une adresse IP pour chaque réseau
+# Docker auquel il se connecte. L'adresse IP est attribuée à partir du pool
+# affecté au réseau, de sorte que le démon Docker agit efficacement comme un
+# serveur DHCP pour chaque conteneur. Chaque réseau possède également un masque
+# de sous-réseau et une passerelle par défaut.
+#
+# liens utiles :
+# https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host
+# https://docs.docker.com/engine/reference/commandline/inspect/
+# https://docs.docker.com/engine/reference/commandline/container_inspect/

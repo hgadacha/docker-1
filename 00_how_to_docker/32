@@ -1,0 +1,15 @@
+docker rm -f $(docker container ls -q -a)
+#
+#
+# docker rm : Retirer un ou plusieurs conteneurs.
+# (-f)(--force) : Forcer la suppression d'un conteneur en cours d'exécution.
+#
+# $() : Réassigne la sortie d'une commande.
+#
+# docker container ls : Liste des containers.
+# (-q)(--quiet) : Affiche uniquement les ID numériques.
+# (-a)(--all) : Affiche tous les conteneurs.
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/rm/
+# https://docs.docker.com/engine/reference/commandline/container_ls/

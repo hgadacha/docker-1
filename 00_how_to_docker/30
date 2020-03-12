@@ -1,0 +1,10 @@
+docker service scale marines=20
+#
+#
+# docker service scale : Fait évoluer un ou plusieurs services répliqués.
+#
+# lister les taches du service : docker service ps marines
+# lister les logs du service : docker service logs marines
+#
+# liens utiles :
+# https://docs.docker.com/engine/reference/commandline/service_scale/
